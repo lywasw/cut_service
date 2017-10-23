@@ -9,5 +9,5 @@ RUN set -ex && \
 	mkdir -p /var/log/python && \
 	rm -rf /var/cache/apk/*
 
-#CMD nohup /usr/bin/gunicorn -w 5 -b 0.0.0.0:7777 start_cut_mod:app & && tail -f /dev/null
-#CMD tail -f /dev/null
+EXPOSE 80
+CMD tail -f /dev/null
