@@ -11,5 +11,4 @@ RUN set -ex && \
 
 WORKDIR /opt/online/service_catalog_web
 EXPOSE 7777
-VOLUME ["/opt/online/service_catalog_web","/var/log/python"]
 ENTRYPOINT ["gunicorn -w 5 -b 0.0.0.0:7777 start_cut_mod:app", ";"]
