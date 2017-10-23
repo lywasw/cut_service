@@ -11,4 +11,5 @@ RUN set -ex && \
 
 WORKDIR /opt/online/service_catalog_web
 EXPOSE 7777
-CMD nohup /usr/bin/gunicorn -w 5 -b 0.0.0.0:7777 start_cut_mod:app & && tail -f /dev/null
+#CMD nohup /usr/bin/gunicorn -w 5 -b 0.0.0.0:7777 start_cut_mod:app & && tail -f /dev/null
+CMD tail -f /dev/null
