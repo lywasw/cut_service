@@ -12,3 +12,4 @@ RUN set -ex && \
 WORKDIR /opt/online/service_catalog_web
 EXPOSE 7777
 ENTRYPOINT ["/usr/bin/gunicorn", "-w 5 -b 0.0.0.0:7777","start_cut_mod:app"]
+CMD ["tail", "-f", "/dev/null"]
