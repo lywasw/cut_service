@@ -9,7 +9,7 @@ RUN set -ex && \
 	mkdir -p /var/log/python && \
 	rm -rf /var/cache/apk/*
 
-WORKDIR /opt/online/wservice_catalog_web
+WORKDIR /opt/online/service_catalog_web
 EXPOSE 7777
 VOLUME ["/opt/online/service_catalog_web","/var/log/python"]
 ENTRYPOINT ["gunicorn -w 5 -b 0.0.0.0:7777 start_cut_mod:app", ";"]
