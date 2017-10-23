@@ -8,3 +8,5 @@ RUN set -ex && \
 	pip install gunicorn chardet flask lxml jieba psycopg2  requests && \
 	mkdir -p /var/log/python && \
 	rm -rf /var/cache/apk/*
+
+CMD tail -f /dev/null
