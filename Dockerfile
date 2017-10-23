@@ -10,4 +10,4 @@ RUN set -ex && \
 	rm -rf /var/cache/apk/*
 
 #CMD nohup /usr/bin/gunicorn -w 5 -b 0.0.0.0:7777 start_cut_mod:app & && tail -f /dev/null
-CMD tail -f /dev/null
+#CMD tail -f /dev/null
