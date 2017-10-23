@@ -9,5 +9,4 @@ RUN set -ex && \
 	mkdir -p /var/log/python && \
 	rm -rf /var/cache/apk/*
 
-EXPOSE 80
 CMD tail -f /dev/null
